@@ -1,4 +1,4 @@
 resources/*
-.classpath
 .project
 .settings/*
+bin/*
