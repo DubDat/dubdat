@@ -31,7 +31,11 @@ public class Test {
 
         // read and decode packets from the source file and
         // and dispatch decoded audio and video to the writer
-        while (mediaReader.readPacket() == null) ;
+        int n = mediaReader.getContainer().getNumStreams();
+        System.out.println(n);
+        while (mediaReader.readPacket() == null) {
+        	//System.out.println(stream.getIndex());
+        };
 
     }
 
